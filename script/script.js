@@ -14,3 +14,15 @@ for (const key in nombrePlanetas){
 
 
 console.log('In')
+
+
+
+nombrePlanetas.forEach((value,index,array) =>{
+    console.log('planeta',index,value)
+} );
+
+let resultadoMap = nombrePlanetas.map((planetas,index) => {
+    return( `El planeta ${planetas} tiene tamaño de: ${tamaño[index]}`)
+    
+})
+console.log(resultadoMap)
